@@ -27,7 +27,6 @@ Additionally, we have developed a **REST API** that supports fundamental CRUD op
 ## Front-End Interface (React.js)
 
 ### Screenshots
-![Screenshot from 2025-01-16 18-35-53](https://github.com/user-attachments/assets/a3d88b46-0100-4cc3-b667-eef8f44041f5)
 ![Screenshot from 2025-01-16 18-35-53](https://github.com/user-attachments/assets/50852c86-49da-4d45-9358-2fadcae6d7e2)
 ![Screenshot from 2025-01-16 18-36-04](https://github.com/user-attachments/assets/13597570-c59f-4d09-8d18-2fefdf3c4819)
 ![Screenshot from 2025-01-16 18-36-07](https://github.com/user-attachments/assets/cb4e32bf-6954-4f20-9913-ace86cb4978f)
