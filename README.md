@@ -1,155 +1,162 @@
-# REST API for an E-Commerce Application
+# E-Commerce Platform with Advanced Features
 
-* We have developed this REST API for an e-commerce application. This API performs all the fundamental CRUD operations of any e-commerce platform with user validation at every step.
-* This project is developed by a team of 5 members during our project week in Masai School, Bengaluru. 
+## Project Goal
+This project aims to create a full-fledged e-commerce platform with advanced features like **Seller Review Analysis** to enhance decision-making. The platform provides:
 
+- **Insights into the most discussed topics** in product reviews.
+- **Sentiment distribution analysis** using CoreNLP from Stanford.
 
-## E-R Diagram for the application
+Additionally, we have developed a **REST API** that supports fundamental CRUD operations of an e-commerce platform, with user validation at every step.
 
-![E-R Diagram](./ER%20Diagram/E-Commerce%20API%20ER%20Diagram.jpeg?raw=true)
-
-## Tech Stack
-
-* Java
-* Spring Framework
-* Spring Boot
-* Spring Data JPA
-* Hibernate
-* MySQL
-
+---
 ## Modules
 
-* Login, Logout Module
-* Seller Module
-* Customer Module
-* Product Module
-* Cart Module
-* Order Module
+1. **Login/Logout**
+2. **Seller**
+3. **Customer**
+4. **Product**
+5. **Cart**
+6. **Order**
+7. **Review Analysis**
 
-## Features
-
-* Customer and Seller authentication & validation with session token having validity of 1 hour for security purposes
-* Seller Features:
-    * Administrator Role of the entire application
-    * Only registered seller with valid session token can add/update/delete products from main database
-    * Seller can access the details of different customers, orders
-* Customer Features:
-    * Registering themselves with application, and logging in to get the valid session token
-    * Viewing different products and adding them to cart and placing orders
-    * Only logged in user can access his orders, cart and other features.
-
-## Installation & Run
-
-* Before running the API server, you should update the database config inside the [application.properties](E-Commerce-Backend\src\main\resources\application.properties) file. 
-* Update the port number, username and password as per your local database config.
-
-```
-    server.port=8009
-
-    spring.datasource.url=jdbc:mysql://localhost:3306/ecommercedb
-    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-    spring.datasource.username=root
-    spring.datasource.password=root
-
-```
-
-## API Root Endpoint
-
-`https://localhost:8009/`
-
-`http://localhost:8009/swagger-ui/index.html#/`
+## Class Diagram and ER Diagram:
+![classfinal](https://github.com/user-attachments/assets/3134bc55-fe98-419a-8bb7-e991a6253b2d)
+![er](https://github.com/user-attachments/assets/835d7451-e182-499b-91a1-067ec153d3e9)
 
 
-## API Module Endpoints
+## Front-End Interface (React.js)
+
+### Screenshots
+![Screenshot from 2025-01-16 18-35-53](https://github.com/user-attachments/assets/a3d88b46-0100-4cc3-b667-eef8f44041f5)
+![Screenshot from 2025-01-16 18-35-53](https://github.com/user-attachments/assets/50852c86-49da-4d45-9358-2fadcae6d7e2)
+![Screenshot from 2025-01-16 18-36-04](https://github.com/user-attachments/assets/13597570-c59f-4d09-8d18-2fefdf3c4819)
+![Screenshot from 2025-01-16 18-36-07](https://github.com/user-attachments/assets/cb4e32bf-6954-4f20-9913-ace86cb4978f)
+![Screenshot from 2025-01-16 18-36-11](https://github.com/user-attachments/assets/9d0ac7ad-0055-47c5-8c81-07cb44b9ab67)
+![Screenshot from 2025-01-16 18-36-26](https://github.com/user-attachments/assets/b1d59cd4-0b45-4839-b3ea-84661856ce37)
+![Screenshot from 2025-01-16 18-36-28](https://github.com/user-attachments/assets/d2ff3ac6-fae4-4ae0-962b-be6c40f984d2)
+![Screenshot from 2025-01-16 18-37-07](https://github.com/user-attachments/assets/88f53924-c770-4327-be2b-8bc2a0776ccc)
+![Screenshot from 2025-01-16 18-37-18](https://github.com/user-attachments/assets/0aaeec06-15cd-4207-be6a-bf45e2e0d975)
+![Screenshot from 2025-01-16 18-37-50](https://github.com/user-attachments/assets/26bf8e38-c3a8-4482-a796-9bdbc0de6347)
+![Screenshot from 2025-01-16 18-38-07](https://github.com/user-attachments/assets/1bec9d85-2a47-42db-affe-2aa149c9fdb3)
+![Screenshot from 2025-01-16 18-38-36](https://github.com/user-attachments/assets/13eb4dfd-4927-462d-8c21-a4b53b592035)
+![Screenshot from 2025-01-16 18-38-55](https://github.com/user-attachments/assets/1b94cff1-a224-4ce4-a497-843357687da5)
+![Screenshot from 2025-01-16 18-38-39](https://github.com/user-attachments/assets/e8957b0e-d437-4d80-a570-e94fbb1cfa18)
+
+---
+
+## Back-End (Spring Boot)
+
+### Tech Stack
+- **Java**
+- **Spring Framework**
+- **Spring Boot**
+- **Spring Data JPA**
+- **Hibernate**
+- **MySQL**
+- **CoreNLP (Stanford)**
+
+
+### Features
+#### Seller Features
+- Administrator role for managing the application.
+- Add/Update/Delete products with valid session tokens.
+- Access customer details, order history, and review insights.
+
+#### Customer Features
+- Register and log in to get a valid session token.
+- Browse products, add to the cart, and place orders.
+- Access order history, cart, and other features when logged in.
+
+#### Review Analysis Module
+Analyze customer reviews using CoreNLP. This module:
+- Extracts the most discussed topics.
+- Displays sentiment distribution (positive, negative, neutral).
+- API Endpoint:  
+  ```http
+  GET /analysis/{productId}
+
+## API Endpoints
+
+### Root Endpoint
+- **Base URL:** `https://localhost:8009/`
+- **Swagger UI:** [API Documentation](http://localhost:8009/swagger-ui/index.html#/)
 
 ### Login & Logout Module
-
-* `POST /register/customer` : Register a new customer
-* `POST /login/customer` : Logging in customer with valid mobile number & password
-* `POST /logout/customer` : Logging out customer based on session token
-* `POST /register/seller` : Register a new seller
-* `POST /login/seller` : Logging in Seller
-* `POST /logout/seller` : Logging out Seller based on session token
-
+- `POST /register/customer` - Register a new customer
+- `POST /login/customer` - Login customer
+- `POST /logout/customer` - Logout customer
+- `POST /register/seller` - Register a new seller
+- `POST /login/seller` - Login seller
+- `POST /logout/seller` - Logout seller
 
 ### Customer Module
-
-* `GET /customer/current` : Getting currently logged in customer
-* `GET /customer/orders` : Getting order history of logged in customer
-* `GET /customers` : Getting All customers
-* `PUT /customer` : Updates logged in customer
-* `PUT /customer/update/password` : Updates customer password
-* `PUT /customer/update/card` : Updates credit card details
-* `PUT /customer/update/address?type=home` : Updates customer's home address
-* `PUT /customer/update/credentials` : Updates email address and mobile number
-* `DELETE /customer` : Deletes logged in user with valid session token
-* `DELETE /customer/delete/address?type=home` : Deletes customer's home address
-
+- `GET /customer/current` - Get logged-in customer details
+- `PUT /customer` - Update customer details
+- `DELETE /customer` - Delete customer account
 
 ### Seller Module
-
-* `GET /seller/{sellerid}` : Gets seller with passed seller Id
-* `GET /seller/current` : Gets seller details for currently logged in seller
-* `GET /sellers` : Gets all sellers
-* `POST /addseller` : Adding new seller
-* `PUT /seller` : Updates seller details
-* `PUT /seller/update/password` : Updates seller password
-* `PUT /seller/update/mobile` : Updates seller mobile number
-* `DELETE /seller/{sellerid}` : Deletes seller with passed id
-
+- `GET /seller/{sellerid}` - Get seller by ID
+- `POST /addseller` - Add new seller
+- `PUT /seller` - Update seller details
+- `DELETE /seller/{sellerid}` - Delete seller by ID
 
 ### Product Module
-
-* `GET /product/{id}` : Gets product with given product id
-* `GET /products` : Gets all products
-* `GET /products/{category}` : Gets product with given category
-* `GET /products/seller/{id}` : Gets product of given seller id
-* `POST /products` : Adds a new product to database
-* `PUT /products` : Updates the product with given product id
-* `PUT /products/{id}` : Updates product quantity
-* `DELETE /product/{id}` : Deletes product with given id
-
+- `GET /product/{id}` - Get product by ID
+- `POST /products` - Add new product
+- `DELETE /product/{id}` - Delete product by ID
 
 ### Cart Module
-
-* `GET /cart` : Get all items in Customer Cart
-* `POST /cart/add` : Add item to Cart
-* `DELETE /cart` : Remove item from Cart
-* `DELETE /cart/clear` : Clear entire cart
-
+- `GET /cart` - Get cart items
+- `POST /cart/add` - Add item to cart
+- `DELETE /cart/clear` - Clear cart
 
 ### Order Module
+- `GET /orders` - Get all orders
+- `POST /order/place` - Place a new order
+- `DELETE /orders/{id}` - Cancel an order
 
-* `GET /orders/{id}` : Gets order details with given order id
-* `GET /orders` : Gets all orders
-* `GET /orders/by/date` : Gets orders placed on given date (DD-MM-YYYY)
-* `POST /order/place` : Places a new order based on cart items
-* `PUT /orders/{id}` : Updates a pending order
-* `DELETE /orders/{id}` : Cancels an order
+---
+## How to Run the Project
 
-
-### Sample API Response for Customer Login
-
-`POST   localhost:8009/login/customer`
-
-* Request Body
-
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-repo/ecommerce-platform.git
 ```
-    {
-        "mobileId": "9999999999",
-        "password": "shyam123456"
-    }
+2. Install Dependencies
+Frontend
+```bash
+cd frontend-directory
+npm install
 ```
 
-* Response
+Backend
 
+Configure the application.properties file for MySQL connection:
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 ```
-    {
-        "sessionId": 23,
-        "token": "customer_0ad57094",
-        "userId": 19,
-        "userType": "customer",
-        "sessionStartTime": "2022-06-10T10:48:20.0109626",
-        "sessionEndTime": "2022-06-10T11:48:20.0109626"
-    }
+3. Build and Run the Server
+
+    Build the backend:
+```bash
+mvn clean install
+
+cd target
+
+java -jar ecommerce-platform-<version>.jar
 ```
+4. Start the Frontend
+
+Navigate to the frontend directory and start the React application:
+```bash
+npm install
+npm start
+```
+## Project Created By:
+
+- **Safouat El Yassini**
+- **Mohammed Amyn El Boujadaini**
+
+Contributions are welcome!
