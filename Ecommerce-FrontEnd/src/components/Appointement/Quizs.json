@@ -1,0 +1,380 @@
+[{
+    "Anxiety": {
+      "GAD7": {
+        "1": {
+          "question": "Feeling nervous, anxious or on edge?",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "2": {
+          "question": "Not being able to stop or control worrying",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "3": {
+          "question": "Worrying too much about different things",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "4": {
+          "question": "Trouble relaxing",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "5": {
+          "question": "Being so restless that it is hard to sit still",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "6": {
+          "question": "Becoming easily annoyed or irritable",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "7": {
+          "question": "Feeling afraid as if something awful might happen",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        }
+      },
+      "PTSD_CHILDREN_AND_YOUTH": {
+        "1": {
+          "question": "Do you have lots of thoughts or memories about the event that you don’t want to have?",
+          "responses": ["No", "Yes"]
+        },
+        "2": {
+          "question": "Do you have bad dreams about the event?",
+          "responses": ["No", "Yes"]
+        },
+        "3": {
+          "question": "Do you feel or act as if the event is about to happen again?",
+          "responses": ["No", "Yes"]
+        },
+        "4": {
+          "question": "Do you have bodily reactions (such as a fast-beating heart, stomach churning, sweating and feeling dizzy) when reminded of the event?",
+          "responses": ["No", "Yes"]
+        },
+        "5": {
+          "question": "Do you have trouble falling or staying asleep?",
+          "responses": ["No", "Yes"]
+        },
+        "6": {
+          "question": "Do you feel grumpy or lose your temper?",
+          "responses": ["No", "Yes"]
+        },
+        "7": {
+          "question": "Do you feel upset by reminders of the event?",
+          "responses": ["No", "Yes"]
+        },
+        "8": {
+          "question": "Do you have a hard time paying attention?",
+          "responses": ["No", "Yes"]
+        },
+        "9": {
+          "question": "Are you on the 'look-out' for possible dangerous things that might happen to yourself and others?",
+          "responses": ["No", "Yes"]
+        },
+        "10": {
+          "question": "When things happen by surprise or all of a sudden, does it make you 'jump'?",
+          "responses": ["No", "Yes"]
+        }
+      },
+      "PTSD_Adults": {
+        "1": {
+          "question": "Have had nightmares about it or thought about it when you did not want to?",
+          "responses":["No", "Yes"]
+        },
+        "2": {
+          "question": "Tried hard not to think about it or went out of your way to avoid situations that reminded you of it?",
+          "responses":["No", "Yes"]
+        },
+        "3": {
+          "question": "Were constantly on guard, watchful, or easily startled?",
+          "responses":["No", "Yes"]
+        },
+        "4": {
+          "question": "Felt numb or detached from others, activities, or your surroundings?",
+          "responses":["No", "Yes"]
+        }
+      },
+      "Score":{
+        "GAD7":"The GAD-7 is scored by assigning scores of 0, 1, 2, and 3, to the response categories of not at all,several days,more than half the days, and nearly every day, respectively. GAD-7 total score for the seven items ranges from 0 to 21. Scores of 5, 10, and 15 represent cutpoints for mild, moderate, and severe anxiety, respectively. ",
+        "PTSD_CHILDREN_AND_YOUTH":"if your score>5, this suggest problems with Posttraumatic Stress Disorder (PTSD). ",
+        "PTSD_Adults":"If your score>=2:Current research suggests that the results of the PC-PTSD should be considered positive if a person answers yes to any two items or the single hyper-arousal item."
+      }
+    }},
+    {
+    "Schizophrenia_and_Psychosis": {
+      "PRIME_Screening_Test_by_Dr_McGlashan_et_al": {
+        "1": {
+          "question": "I feel that others control what I think and feel.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "2": {
+          "question": "I hear or see things that others do not hear or see.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "3": {
+          "question": "I feel it is very difficult for me to express myself in words that others can understand.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "4": {
+          "question": "I feel I share absolutely nothing in common with others, including my friends and family.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "5": {
+          "question": "I believe in more than one thing about reality and the world around me that nobody else seems to believe in.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "6": {
+          "question": "Others don't believe me when I tell them the things I see or hear.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "7": {
+          "question": "I can't trust what I'm thinking because I don't know if it's real or not.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "8": {
+          "question": "I have magical powers that nobody else has or can explain.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "9": {
+          "question": "Others are plotting to get me.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "10": {
+          "question": "I find it difficult to get a hold of my thoughts.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "11": {
+          "question": "I am treated unfairly because others are jealous of my special abilities.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        },
+        "12": {
+          "question": "I talk to another person or other people inside my head that nobody else can hear.",
+          "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "All the time"]
+        }
+      },
+      "Score":{
+        "PRIME_Screening_Test_by_Dr_McGlashan_et_al":"14 and Up: Suggestive of psychosis. See a health professional. 10 - 13: Possible early psychosis. See a health professional. 0 - 9: Unlikely to be psychosis. Given that a survey is not a replacement for a health professional, you should still see a health professional if you are worried. "
+        
+      }
+    }},{
+    "Obsessive_Compulsive_Disorder_OCD": {
+      "Zohar-Fineberg_obsessive_compulsive_screen": {
+        "1": {
+          "question": "Do you wash or clean a lot?",
+          "responses":["No", "Yes"]
+        },
+        "2": {
+          "question": "Do you check things a lot?",
+          "responses":["No", "Yes"]
+        },
+        "3": {
+          "question": "Is there any thought that keeps bothering you that you would like to get rid of but can't?",
+          "responses":["No", "Yes"]
+        },
+        "4": {
+          "question": "Do your daily activities take a long time to finish?",
+          "responses":["No", "Yes"]
+        },
+        "5": {
+          "question": "Are you concerned about orderliness or symmetry?",
+          "responses":["No", "Yes"]
+        }
+      },
+      "OCD_Screen_by_Drs_Uher_Heyman": {
+        "1": {
+          "question": "Does your mind often make you do things -- such as checking or touching things or counting things -- even though you know you don't really have to?",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "2": {
+          "question": "Are you particularly fussy about keeping your hands clean?",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "3": {
+          "question": "Do you ever have to do things over and over a certain number of times before they seem quite right?",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "4": {
+          "question": "Do you ever have troubles finishing your school work or chores because you have to do something over and over again?",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "5": {
+          "question": "Do you worry a lot if you've done something not exactly the way you like?",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "6": {
+          "question": "If you answered 'a bit' or 'a lot' to questions 1-5, do any of these things interfere with your life? (If you answered 'no' to questions 1-5, then just answer no again.)",
+          "responses": ["No", "A bit", "A lot"]
+        },
+        "7": {
+          "question": "If you answered 'a bit' or 'a lot' to questions 1-5, do you try to stop these things? (If you answered 'no' to questions 1-5, then just answer no again.)",
+          "responses": ["No", "A bit", "A lot"]
+        }
+      },
+      "Score":{
+        "Zohar-Fineberg_obsessive_compulsive_screen":"if your score>=1: If you answer to ONE or more of these questions, then you should see a health professional to explore further. ",
+        "OCD_Screen_by_Drs_Uher_Heyman":" Since you have scored 6 or above, then there is a good chance that you may have Obsessive Compulsive Disorder. "
+ 
+      }
+    }},
+    {
+    "Depression": {
+      "PHQ9": {
+        "1": {
+          "question": "Little interest or pleasure in doing things",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "2": {
+          "question": "Feeling down, depressed, or hopeless",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "3": {
+          "question": "Trouble falling or staying asleep, or sleeping too much",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "4": {
+          "question": "Feeling tired or having little energy",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "5": {
+          "question": "Poor appetite or overeating",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "6": {
+          "question": "Feeling bad about yourself or that you are a failure or have let yourself or your family down",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "7": {
+          "question": "Trouble concentrating on things, such as reading the newspaper or watching television",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "8": {
+          "question": "Moving or speaking so slowly that other people could have noticed? Or the opposite -- being so fidgety or restless that you have been moving around a lot more than usual",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        },
+        "9": {
+          "question": "Thoughts that you would be better off dead or of hurting yourself in some way",
+          "responses": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+        }
+      } ,
+    "Score":{
+        "PHQ9":" 0-4 suggests absence of depression; 5-9 suggests mild depression; 10-14 suggests moderate depression; 15-19 suggests moderately severe depression; 20-27 suggests severe depression. "
+    }
+    }
+},
+    {
+    "Bipolar_Disorder": {
+     "Goldberg_Bipolar_Screening_Quiz": {
+          "1": {
+            "question": "At times I am much more talkative or speak much faster than usual.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "2": {
+            "question": "There have been times when I was much more active or did many more things than usual.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "3": {
+            "question": "I get into moods where I feel very speeded up or irritable.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "4": {
+            "question": "There have been times when I felt both high (elated) and low (depressed) at the same time.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "5": {
+            "question": "At times I have been much more interested in sex than usual.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "6": {
+            "question": "My self-confidence ranges from great self-doubt to equally great overconfidence.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "7": {
+            "question": "There have been GREAT variations in the quantity or quality of my work.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "8": {
+            "question": "For no apparent reason I sometimes have been VERY angry or hostile.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "9": {
+            "question": "I have periods of mental dullness and other periods of very creative thinking.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "10": {
+            "question": "At times I am greatly interested in being with people and at other times I just want to be left alone with my thoughts.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "11": {
+            "question": "I have had periods of great optimism and other periods of equally great pessimism.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          },
+          "12": {
+            "question": "I have had periods of tearfulness and crying and other times when I laugh and joke excessively.",
+            "responses": ["Not at all", "Just a little", "Somewhat", "Moderately", "Quite a lot", "Very much"]
+          }
+        
+      },
+      "Score":{
+
+     "Goldberg_Bipolar_Screening_Quiz" :"This questionnaire is valid only if you are 18 or older and have had a depression severe enough to have caused distress and/or interfered with your functioning in one or more important areas of life such as home, work, school, or interpersonal relationships. Scores are added up over the 12 questions. Individuals with total scores of 15 or less are most likely suffering from Major (unipolar) Depression. Those scoring between 16 and 24 may have either major depression or a disorder in the bipolar spectrum. Those scoring 25 or more have a high probability of having a bipolar spectrum disorder. "
+      }
+    }},
+    {
+    "Sensory_Processing_Disorders_and_Self_Regulation_Problems": {
+      "Screening_Tool": {
+        "1": {
+          "question": "Was unusually fussy, difficult to console, or easily startled as an infant?",
+          "responses":["No", "Yes"]
+        },
+        "2": {
+          "question": "Has difficulty regulating sleep/wake cycles --settling for sleep, staying asleep, and waking without irritability",
+          "responses":["No", "Yes"]
+        },
+        "3": {
+          "question": "Is over-sensitive to stimulation--over-reacts to touch, taste, sounds, or odors",
+          "responses":["No", "Yes"]
+        },
+        "4": {
+          "question": "Strongly dislikes baths, haircuts, or nail cutting (i.e. touch sensitivity)",
+          "responses":["No", "Yes"]
+        },
+        "5": {
+          "question": "Uses an inappropriate amount of force when handling objects, coloring, writing, or interacting with siblings or pets (i.e. poor registration)",
+          "responses":["No", "Yes"]
+        },
+        "6": {
+          "question": "Has poor muscle tone, fatigues easily, leans on people, or slumps in a chair",
+          "responses":["No", "Yes"]
+        },
+        "7": {
+          "question": "Was slow to roll over, creep, sit, stand, or walk, or to achieve other motor milestones",
+          "responses":["No", "Yes"]
+        },
+        "8": {
+          "question": "Is clumsy, falls frequently, bumps into furniture or people, and has trouble judging position of body in relation to surrounding space",
+          "responses":["No", "Yes"]
+        },
+        "9": {
+          "question": "Has difficulty learning new motor tasks; experiences frustration when attempting to follow instructions or sequence steps for an activity",
+          "responses":["No", "Yes"]
+        },
+        "10": {
+          "question": "Avoids playground activities, physical education class, and/or sports",
+          "responses":["No", "Yes"]
+        },
+        "11": {
+          "question": "Does not enjoy age-appropriate motor activities such as jumping, swinging, climbing, drawing, cutting, assembling puzzles, or writing",
+          "responses":["No", "Yes"]
+        },
+        "12": {
+          "question": "Finds it difficult to make friends with peers; prefers to play with adults or younger children",
+          "responses":["No", "Yes"]
+        }
+      },
+      "Score":{
+        "Screening_Tool":" There is a possibility that there may be a sensory processing problem. Even if there are not problems in many areas, if there is a severe problem in one area, then it should be looked into. "
+      }
+
+    }
+}
+  
+]
+  
+  
+  

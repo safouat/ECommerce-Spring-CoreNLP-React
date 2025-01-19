@@ -1,0 +1,90 @@
+.red-store{
+    /*card styling*/
+    .product-card {
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .product-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed6f0f;
+        border-radius: 10px;
+      }
+      
+      .product-image {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+      
+      .rating i {
+        color: #ffc107;
+        margin-right: 4px;
+      }
+      
+      .product-price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+      
+    /* navbar container that makes it stick*/
+    .navbar_container{
+      margin-top: 3%;
+      position: sticky;
+      top: 5px;
+      z-index: 1;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 10px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .navbar_link{
+      margin-left:3%;
+      border-bottom: #ed6f0f solid 2px;
+    }
+    .navbar_link:hover{
+      color: #ed6f0f;
+    
+    }
+    }
+    
+    /* dashboard product card*/
+    .dashboard-product-card {
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+    
+      }
+      
+      .dashboard-product-card:hover {
+        /*
+        transform: scale(1.02);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ed6f0f;
+        border-radius: 10px;
+        */
+      }
+      .dashboard-product-image {
+        width: 100%;
+         /* Scale down to fit container width */
+        height: auto;    /* Maintain aspect ratio */
+        border-radius: 4px;
+        object-fit: cover;
+      }
+    
+      .dashboard-products-container{
+        margin: 5%;
+        padding: 2vh;
+        box-shadow: #d5d3d3 0 1px 10px 0;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .side_border{
+        height:fit-content;
+        box-shadow: #d5d3d3 0 1px 10px 0;
+        padding:1px;
+        border-radius: 10px;
+      }
+      
